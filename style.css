@@ -1,303 +1,207 @@
 body {
 
-    margin: 0;
+  font-family: Arial;
 
-    font-family: Arial, sans-serif;
+  direction: rtl;
 
-    direction: rtl;
+  text-align: center;
 
-    background-color: #f4f6f8;
+  background: #958fcc;
+
+}
+.card {
+
+  transition: 0.3s;
 
 }
 
 
 
-/* العنوان الرئيسي */
+.card:hover {
 
-h1 {
+  transform: translateY(-10px);
 
-    background-color: #0d1b2a;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 20px;
-
-    margin: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 
 }
+.hero {
 
-
-
-/* شريط التنقل */
-
-nav {
-
-    background-color: #1b263b;
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 30px;
-
-    padding: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
 }
-
-
-
-nav a {
-
-    color: #e0e1dd;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    transition: 0.3s;
-
-}
-
-
-
-nav a:hover {
-
-    color: #00b4d8;
-
-}
-
-
-
-/* القسم الرئيسي */
 
 .hero {
 
-    text-align: center;
+  height: 400px;
 
-    padding: 80px 20px;
+  background: url("hero.jpg") no-repeat center;
 
-    background: linear-gradient(to right, #0d1b2a, #1b263b);
+  background-size: cover;
 
-    color: white;
+  position: relative;
 
-}
+  border-radius: 15px;
 
+  margin: 20px;
 
-
-.hero h2 {
-
-    font-size: 32px;
-
-    margin-bottom: 15px;
+  overflow: hidden;
 
 }
 
 
 
-.hero p {
+.overlay {
 
-    font-size: 18px;
+  background: rgba(0, 0, 0, 0.5); /* التعتيم */
 
-    max-width: 600px;
+  height: 100%;
 
-    margin: auto;
+  display: flex;
 
-    line-height: 1.6;
+  flex-direction: column;
 
-}
+  justify-content: center;
 
-.products {
+  align-items: center;
 
-    display: flex;
+  color: rgb(65, 60, 60);
 
-    justify-content: center;
+  text-align: center;
 
-    gap: 30px;
-
-    flex-wrap: wrap;
-
-    padding: 60px 20px;
-
-    background-color: #f4f6f8;
+  padding: 20px;
 
 }
 
 
 
-/* الكرت */
+.overlay h1 {
 
-.product {
+  font-size: 20px;
 
-    background-color: white;
-
-    width: 300px;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-
-    text-align: center;
-
-    transition: 0.3s;
+  margin-bottom: 10px;
 
 }
 
 
 
-.product:hover {
+.overlay p {
 
-    transform: translateY(-8px);
+  font-size: 16px;
+
+}
+
+.courses {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 20px;
+
+}
+hero {
+
+  height: 400px;
+
+  background: url("hero.jpg") no-repeat center;
+
+  background-size: cover;
+
+  position: relative;
+
+  border-radius: 15px;
+
+  margin: 20px;
+
+  overflow: hidden;
 
 }
 
 
 
-/* الصورة */
+.overlay {
 
-.product img {
+  background: rgba(0, 0, 0, 0.5); /* التعتيم */
 
-    width: 100%;
+  height: 100%;
 
-    height: 200px;
+  display: flex;
 
-    object-fit: cover;
+  flex-direction: column;
 
-}
+  justify-content: center;
 
+  align-items: center;
 
+  color: rgb(255, 255, 255);
 
-/* العنوان */
+  text-align: center;
 
-.product h3 {
-
-    margin: 15px 0 10px;
-
-    color: #0d1b2a;
+  padding: 20px;
 
 }
 
 
 
-/* النص */
+.overlay h1 {
 
-.product p {
+  font-size: 30px;
 
-    font-size: 14px;
-
-    color: #555;
-
-    padding: 0 15px;
-
-    line-height: 1.6;
+  margin-bottom: 10px;
 
 }
 
 
 
-/* الزر */
+.overlay p {
 
-.btn {
-
-    display: inline-block;
-
-    margin: 15px 0 20px;
-
-    padding: 10px 20px;
-
-    background-color: #1b263b;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 8px;
-
-    transition: 0.3s;
+  font-size: 16px;
 
 }
 
 
 
-.btn:hover {
+.card {
 
-    background-color: #00b4d8;
+  background: rgb(255, 255, 255);
 
-}
+  width: 200px;
 
-body {
+  padding: 15px;
 
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-
-    direction: rtl;
-
-    background-color: #f4f6f8;
+  border-radius: 10px;
 
 }
 
 
 
-/* قسم المنتجات (تثبيت) */
+.card img {
 
-.products {
+  width: 100%;
 
-    display: flex;
-
-    justify-content: center;
-
-    gap: 30px;
-
-    flex-wrap: wrap;
-
-    padding: 60px 20px;
+  border-radius: 10px;
 
 }
 
 
 
-/* الكروت */
+a {
 
-.product {
+  display: inline-block;
 
-    background-color: #ffffff;
+  margin-top: 10px;
 
-    width: 300px;
+  text-decoration: none;
 
-    border-radius: 12px;
+  background: #4e5263;
 
-    overflow: hidden;
+  color: white;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
 
-    text-align: center;
-
-    transition: 0.3s;
+  border-radius: 5px;
 
 }
 
-
-
-.product:hover {
-
-    transform: translateY(-8px);
-
-}
-
-
-
-/* الصور */
-
-.product img {
-
-    width: 100%;
-
-    height: 200px;
-
-    object-fit: cover;
-
-}
